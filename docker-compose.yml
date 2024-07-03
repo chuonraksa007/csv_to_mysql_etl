@@ -1,0 +1,34 @@
+version: '3.8'
+
+# CSV-Mysql etl container
+services:
+  app:
+    build: .
+    container_name: csv_etl_container
+    volumes:
+      - .:/app
+    command: ["python", "app.py"]
+    networks:
+      - csv_etl_network
+
+  # MySQL Service
+  mysql:
+    image: mysql:latest
+    container_name: csv_etl_mysql_container
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: db_etl
+      MYSQL_USER: user_etl
+      MYSQL_PASSWORD: 123456
+      MYSQL_AUTHENTICATION_PLUGIN: mysql_native_password
+    ports:
+      - "3341:3306"
+    networks:
+      - csv_etl_network
+
+# Docker Networks
+networks:
+  csv_etl_network:
+    name: csv_etl_network
+    driver: bridge

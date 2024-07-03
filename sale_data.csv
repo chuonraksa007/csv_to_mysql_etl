@@ -1,0 +1,10 @@
+transaction_id,date,product_category,product_name,units_sold,unit_price,total_revenue,region,payment_method
+10001,1/1/24,Electronics,iPhone 14 Pro,2,999.99,1999.98,North America,Credit Card
+10002,2/1/24,Home Appliances,Dyson V11 Vacuum,1,499.99,499.99,Europe,PayPal
+10003,3/1/24,Clothing,Levi's 501 Jeans,3,69.99,209.97,Asia,Debit Card
+10004,4/1/24,Books,The Da Vinci Code,4,15.99,63.96,North America,Credit Card
+10005,5/1/24,Beauty Products,Neutrogena Skincare Set,1,89.99,89.99,Europe,PayPal
+10006,6/1/24,Sports,Wilson Evolution Basketball,5,29.99,149.95,Asia,Credit Card
+10007,7/1/24,Electronics,MacBook Pro 16-inch,1,2499.99,2499.99,North America,Credit Card
+10008,8/1/24,Home Appliances,Blueair Classic 480i,2,599.99,1199.98,Europe,PayPal
+10009,9/1/24,Clothing,Nike Air Force 1,6,89.99,539.94,Asia,Debit Card
